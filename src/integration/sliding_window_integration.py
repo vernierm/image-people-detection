@@ -7,7 +7,7 @@ import time
 
 
 #GLOBAL VARIABLES
-modelPath = "../../models/slozenija_20_vise_slika.h5"
+modelPath = "../../models/complex_20_more_examples.h5"
 output_path = "../../test/img.jpg"
 
 #SLIDING WINDOW INITIAL VALUES

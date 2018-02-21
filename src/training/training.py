@@ -27,7 +27,7 @@ batchSize = 32
 
 modelSavePath = "../../models/proba.h5"
 
-#JEDNOSTAVNA ARHITEKTURA
+#SIMPLE MODEL
 def buildModelSimple():			
     model = Sequential()
     model.add(Conv2D(32, (3, 3), input_shape = inputShapeTF))
@@ -55,7 +55,7 @@ def buildModelSimple():
 
     return model
 
-#SLOZENIJA ARHITEKTURA
+#COMPLEX ARCHITECTURE
 def buildModelComplex():
     model = Sequential()
 
@@ -143,7 +143,7 @@ if __name__ == "__main__":
     2) buildModelComplex() loads my custom network architecture
     
     """
-    model = buildModelGist()
+    model = buildModelSimple()
     model.summary()
     trainValidFitModel(model)
     model.save(modelSavePath)
