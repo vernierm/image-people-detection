@@ -48,14 +48,14 @@ Same as above. Use /src/integration/selective_search_integration.py file.
 Firstly, create directory with following structure:  
 VIDEO/  
 &nbsp;&nbsp;MP4/  
-&nbsp;&nbsp;&nbsp;&nbsp;video.mp4 <!--- this is starting video --->  
-&nbsp;&nbsp;IMG/ <!---  --->--ovdje se spremaju slike izrezane iz videoisječka
-&nbsp;&nbsp;IMG_L/				--ovdje se spremaju slike sa oznakama detektiranih ljudi
-&nbsp;&nbsp;MP4_L/				--ovdje se sprema videoisječak dobiven spajanjem slika iz mape iznad
+&nbsp;&nbsp;&nbsp;&nbsp;video.mp4 *this is starting video*  
+&nbsp;&nbsp;IMG/ *directory for captured images*  
+&nbsp;&nbsp;IMG_L/ *directory for labeled images*  
+&nbsp;&nbsp;MP4_L/ *directory for final video created from labeled images*  
+  
+Now it is necessary to set paths in video_integration program.  
+Now run /src/integration/video_integration_sliding_window.py or /src/integration/video_integration_selective_search.py. 
 
--još je potrebno namjestiti puteve u video_integration programu
-	-pokretanjem /src/integration/video_integration_sliding_window.py ili /src/integration/video_integration_selective_search.py dobivamo videoisječke s označenim ljudima 
+## Results
 
-================================================================================================================================================
-
-U mapi /results nalaze se videoisječci i slike na kojima je provedena detekcija osoba.
+In /results are samples of labeled images and videos gained with two techniques listed above.
